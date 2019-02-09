@@ -1,0 +1,27 @@
+{
+  "ecmaVersion": 6,
+  "libs": [
+    "browser",
+    "jquery",
+    "es5",
+    "es6",
+    "es7"
+  ],
+  "loadEagerly": [
+    "importantfile.js",
+    "node_modules/react-dom/**/*.js",
+    "node_modules/react/**/*.js"
+  ],
+  "plugins": {
+    "angular": {},
+    "complete_strings": {},
+    "doc_comment": {},
+    "requirejs": {},
+    "modules": {},
+    "node":{},
+    "node_resolve":{},
+    "es_module": {},
+    "react": {},
+    "webpack": {}
+  }
+}
