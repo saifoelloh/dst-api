@@ -3,6 +3,7 @@ const Mongoose = require('mongoose');
 const BodyParser = require('body-parser');
 const DotEnv = require('dotenv').config();
 const Multer = require('multer');
+const Cors = require('cors');
 
 const app = Express();
 const PORT = process.env.PORT | 3000;
@@ -13,6 +14,7 @@ Mongoose.connect(
   }@pet-shop-hmtxn.gcp.mongodb.net/test?retryWrites=true`,
 );
 
+app.use(Cors());
 app.use(BodyParser.json());
 
 const {AuthRoute, AuthorRoute, BookRoute} = require('./src/route');
