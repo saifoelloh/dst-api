@@ -1,7 +1,10 @@
 {
   "name": "dst2",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple api with expressjs and mongoose",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
