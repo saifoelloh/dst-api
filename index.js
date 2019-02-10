@@ -7,7 +7,11 @@ const Multer = require('multer');
 const app = Express();
 const PORT = process.env.PORT | 3000;
 
-Mongoose.connect('mongodb://localhost:27017/coba');
+Mongoose.connect(
+  `mongodb+srv://${process.env.DB_USER}:${
+    process.env.DB_PASS
+  }@pet-shop-hmtxn.gcp.mongodb.net/test?retryWrites=true`,
+);
 
 app.use(BodyParser.json());
 
